@@ -44,6 +44,14 @@ group :development do
 	gem 'capistrano', group: :development
 end
 
+group :test, :development do
+	# Ruby testing
+	gem 'rspec-rails'
+
+	# JS / Coffeescript testing
+	gem "jasminerice", :git => 'https://github.com/bradphelan/jasminerice.git'
+end
+
 # Use unicorn as the app server
 gem 'unicorn'
 

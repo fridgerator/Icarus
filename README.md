@@ -45,3 +45,11 @@ Project is obviously still in its infancy.  Following is a basic outline of ever
 	* windows
 	* linux
 	* [ruby shoes](http://shoesrb.com/) or [ruby qt](http://zetcode.com/gui/rubyqt/) possibly for desktop cross platformness ??
+
+
+* General
+	* ruby testing with [Rspec](https://github.com/rspec/rspec-rails)
+	* CoffeeScript testing with [jasminerice](https://github.com/bradphelan/jasminerice)
+	* [HAML](https://github.com/indirect/haml-rails) templates
+	* [HAMLC](https://github.com/netzpirat/haml_coffee_assets) javascript templates
+	* [CoffeeScript](http://coffeescript.org/) over JS

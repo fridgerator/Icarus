@@ -41,7 +41,8 @@ group :doc do
 end
 
 group :development do
-	gem 'capistrano', group: :development
+	# Debugging
+	gem 'pry'
 end
 
 group :test, :development do

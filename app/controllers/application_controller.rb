@@ -1,16 +1,13 @@
 class ApplicationController < ActionController::Base
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
   before_filter :first_user
-  # before_filter :authenticate_user!
+  before_filter :authenticate_user!
 
   private
 
+  # Check if no users exist, redirect to set_up
   def first_user
-  	if User.count < 1
-  		redirect_to set_up_path
-  	end
+		redirect_to set_up_path and return if User.count < 1
   end
 end

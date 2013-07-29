@@ -5,6 +5,7 @@ Rcloud::Application.routes.draw do
 
   resource :set_up, only: :index do
     get '/' => 'set_up#index'
+    post '/set_up' => 'set_up#set_up'
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

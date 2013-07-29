@@ -53,3 +53,8 @@ Project is obviously still in its infancy.  Following is a basic outline of ever
 	* [HAML](https://github.com/indirect/haml-rails) templates
 	* [HAMLC](https://github.com/netzpirat/haml_coffee_assets) javascript templates
 	* [CoffeeScript](http://coffeescript.org/) over JS
+	* using [Foundation](http://foundation.zurb.com/)
+
+#### License
+Copyright (c) 2013 Nick Franken
+MIT License, see LICENSE file

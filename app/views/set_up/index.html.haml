@@ -1,2 +1,9 @@
-%h1 SetUp#index
-%p Find me in app/views/set_up/index.html.haml
+.row
+	.small-10.large-3.large-centered.columns
+		%h3 Set Up Account
+		= form_tag set_up_set_up_path do
+			= label_tag 'email'
+			= email_field_tag 'email'
+			= label_tag 'password'
+			= password_field_tag 'password'
+			= submit_tag 'Submit', class: 'button'

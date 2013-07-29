@@ -23,6 +23,11 @@
       %ul.right
         %li.divider.hide-for-small
         %li= link_to 'stuff', '#'
+        - if current_user
+          %li.has-dropdown
+            = link_to current_user.email, '#'
+            %ul.dropdown
+              %li= link_to 'Log out', destroy_user_session_path, method: :delete
 
   = yield
     

@@ -19,7 +19,7 @@ Project is obviously still in its infancy.  Following is a basic outline of ever
 	* html5 player
 * Streaming
 	* html5
-	* possible other types of streaming (i.e. something [ampache-is](https://github.com/fridgamarator/rcloud))
+	* possible other types of streaming (i.e. something [ampache-is](http://ampache.org/wiki/start))
 
 * sorting by artist / album / song title
 	* [taglib ruby](https://github.com/robinst/taglib-ruby)

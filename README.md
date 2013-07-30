@@ -1,4 +1,4 @@
-### rCloud
+### icarus
 My hopes are to build a file storage and stream server similar to [ownCloud](http://owncloud.org/) written in ruby 2.0 / rails 4.
 
 Project is obviously still in its infancy.  Following is a basic outline of everything I would like to accomplish with this project:

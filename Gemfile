@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -20,6 +22,9 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Haml
 gem 'haml-rails'
+
+# File Uploading
+gem 'paperclip'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -46,6 +51,9 @@ group :development do
 end
 
 group :test, :development do
+	# Testing Factories
+	gem 'factory_girl_rails'
+	
 	# Ruby testing
 	gem 'rspec-rails'
 

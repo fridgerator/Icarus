@@ -1,0 +1,2 @@
+module UserUploadsHelper
+end

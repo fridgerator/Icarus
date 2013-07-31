@@ -1,8 +1,8 @@
 %ul
-	- current_user.all_uploads.each do |upload|
+	- Music.all.each do |upload|
 		%li= link_to upload.file_file_name, upload.file.url
 
-= form_for UserUpload.new do |f|
+= form_for Music.new, url: user_uploads_path do |f|
 	= f.label :file
 	%br
 	= f.file_field :file

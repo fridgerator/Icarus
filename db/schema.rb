@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20130731035210) do
 
   create_table "user_uploads", force: true do |t|
     t.integer  "user_id"
-    t.string   "user_upload_type"
+    t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "file_file_name"

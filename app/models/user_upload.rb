@@ -12,7 +12,7 @@ class UserUpload < ActiveRecord::Base
 	validates_attachment_presence :file
 	# TODO: add custom validation for file size once we get account settings for users / groups
 
-	# if user owns the upload, they can download it
+	# for now, if user owns the upload they can download it
 	def downloadable?(user)
 		user.id == user_id
 	end

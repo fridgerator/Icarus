@@ -2,7 +2,7 @@ class CreateUserUploads < ActiveRecord::Migration
   def change
     create_table :user_uploads do |t|
       t.integer :user_id
-      t.string :user_upload_type
+      t.string :type
 
       t.timestamps
     end

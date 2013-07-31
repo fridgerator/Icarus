@@ -13,7 +13,7 @@ class UserUploadsController < ApplicationController
 
 	# create uploaded file
 	def create
-		@user_upload = UserUpload.new upload_params
+		@user_upload = Music.new upload_params
 		@user_upload.user_id = current_user.id
 		@user_upload.save
 		redirect_to root_path
@@ -23,6 +23,8 @@ class UserUploadsController < ApplicationController
 
 	# whitelist params
 	def upload_params
-		params.require(:user_upload).permit(:file)
+		return params.require(:user_file).permit(:file) unless params[:user_file].blank?
+		return params.require(:music).permit(:file) unless params[:music].blank?
+		return params.require(:photo).permit(:file) unless params[:photo].blank?
 	end
 end

@@ -6,8 +6,8 @@ My hopes are to build a file storage and stream server similar to [ownCloud](htt
 Project is obviously still in its infancy.  Following is a basic outline of everything I would like to accomplish with this project:
 
 * Main
-	* log in / log out - [devise](https://github.com/plataformatec/devise)
-	* first user able to creat self (devise :registerable), following users must be created by admin
+	* ~~log in / log out - [devise](https://github.com/plataformatec/devise)~~
+	* ~~first user able to creat self (devise :registerable), following users must be created by admin~~
 
 * Files
 	* list

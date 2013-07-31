@@ -5,8 +5,8 @@ class UserUpload < ActiveRecord::Base
 
 	# Paperclip
 	has_attached_file :file,
-										url: '/:class/:id/:style.:extension',
-										path: ':rails_root/user_uploads/:class/:id_partition/:style.:extension'
+										url: '/:class/:id/:basename.:extension',
+										path: ':rails_root/user_uploads/:class/:id_partition/:basename.:extension'
 
 	# Validations
 	validates_attachment_presence :file

@@ -7,4 +7,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :recoverable, :rememberable, :trackable, :validatable
 
 
+  def all_uploads
+  	user_uploads.all
+  end
 end

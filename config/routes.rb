@@ -9,7 +9,7 @@ Rcloud::Application.routes.draw do
   end
 
   resource :user_uploads do
-    get '/:id/:style.:format' => 'user_uploads#download'
+    get '/:id/:basename.:format' => 'user_uploads#download'
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

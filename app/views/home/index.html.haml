@@ -1,8 +1,33 @@
+%h3 File
+%ul
+	- UserFile.all.each do |upload|
+		%li= link_to upload.file_file_name, upload.file.url
+
+= form_for UserFile.new, url: user_uploads_path do |f|
+	= f.label :file
+	%br
+	= f.file_field :file
+	%br
+	= f.submit 'upload'
+
+%h3 Music
 %ul
 	- Music.all.each do |upload|
 		%li= link_to upload.file_file_name, upload.file.url
 
 = form_for Music.new, url: user_uploads_path do |f|
+	= f.label :file
+	%br
+	= f.file_field :file
+	%br
+	= f.submit 'upload'
+
+%h3 Photo
+%ul
+	- Photo.all.each do |upload|
+		%li= link_to upload.file_file_name, upload.file.url
+
+= form_for Photo.new, url: user_uploads_path do |f|
 	= f.label :file
 	%br
 	= f.file_field :file

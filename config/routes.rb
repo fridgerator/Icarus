@@ -12,6 +12,11 @@ Rcloud::Application.routes.draw do
     get '/:id/:basename.:format' => 'user_uploads#download'
   end
 
+  resource :home, only: :index do
+    get '/music' => 'home#music'
+    get '/photo' => 'home#photo'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,4 @@
+%h3 Photos
+%ul
+	- @photos.each do |upload|
+		%li= link_to upload.file_file_name, upload.file.url

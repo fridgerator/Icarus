@@ -12,3 +12,8 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+
+.row.full-width{
+	width: 100%;
+	max-width: 100%;
+}

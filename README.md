@@ -10,12 +10,13 @@ Project is obviously still in its infancy.  Following is a basic outline of ever
 	* ~~first user able to creat self (devise :registerable), following users must be created by admin~~
 
 * Files
+	* folders / containers
 	* list
 	* actions (delete, share, etc)
 	* size
 	* modified
-	* upload - [paperclip](https://github.com/thoughtbot/paperclip)
-		* [secure uploads](http://thewebfellas.com/blog/2009/8/29/protecting-your-paperclip-downloads)
+	* ~~upload - [paperclip](https://github.com/thoughtbot/paperclip)~~
+		* ~~[secure uploads](http://thewebfellas.com/blog/2009/8/29/protecting-your-paperclip-downloads)~~
 
 * Music
 	* html5 player

@@ -17,7 +17,7 @@
   %nav.top-bar
     %ul.title-area
       %li.name
-        %h1= link_to 'rCloud', root_path
+        %h1= link_to 'icarus', root_path
 
     %section.top-bar-section
       %ul.right
@@ -29,6 +29,20 @@
             %ul.dropdown
               %li= link_to 'Log out', destroy_user_session_path, method: :delete
 
-  = yield
+  .row.full-width
+    - if current_user
+      .large-1.columns.sidebar
+        .files
+          = link_to root_path do
+            = image_tag 'file.png'
+        .music
+          = link_to music_home_path do
+            = image_tag 'sound.png'
+        .images
+          = link_to photo_home_path do
+            = image_tag 'camera.png'
+
+    .large-11.columns
+      = yield
     
   = javascript_include_tag "application"

@@ -1,0 +1,6 @@
+- files.each do |file|
+	= div_for file, class: 'large-12 file-list-item' do
+		= link_to file.file_file_name, file.file.url
+		.controls
+			= link_to 'delete', user_upload_path(file.id), remote: true, method: :delete, confirm: 'are you sure?'
+			= link_to 'rename', '#'

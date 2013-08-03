@@ -22,7 +22,10 @@
     %section.top-bar-section
       %ul.right
         %li.divider.hide-for-small
-        %li= link_to 'stuff', '#'
+        %li.upload
+          = image_tag 'file_up2.png', class: 'upload-trigger'
+          = form_for UserUpload.new do |f|
+            = f.file_field :file
         - if current_user
           %li.has-dropdown
             = link_to current_user.email, '#'

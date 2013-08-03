@@ -1,4 +1,2 @@
 %h3 Music
-%ul
-	- @music.each do |upload|
-		%li= link_to upload.file_file_name, upload.file.url
+= render partial: 'shared/file_list', locals: { files: @music }

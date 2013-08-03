@@ -1,8 +1,30 @@
-.files, .music, .images{
-	width: 35px;
-	margin: 0 auto;
-	margin-bottom: 40px;
-	img{
-		width: 100%;
+li.upload{
+	padding: 5px;
+	#user_upload_file{
+		display: none;
+	}
+}
+
+.sidebar{
+	.files, .music, .images{
+		width: 35px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.file-list-item{
+	padding: 10px 0;
+	.controls{
+		float: right;
+	}
+	&:nth-child(even) {
+		background: #eee;
+	}
+	&:hover{
+		background: #ddd;
 	}
 }

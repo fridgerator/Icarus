@@ -19,6 +19,12 @@ class UserUploadsController < ApplicationController
 		redirect_to root_path
 	end
 
+	# destroy uploaded file
+	def destroy
+		@user_upload = UserUpload.find params[:id]
+		@user_upload.destroy
+	end
+
 	private
 
 	# whitelist params

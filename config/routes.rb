@@ -8,7 +8,7 @@ Rcloud::Application.routes.draw do
     post '/set_up' => 'set_up#set_up'
   end
 
-  resource :user_uploads do
+  resources :user_uploads do
     get '/:id/:basename.:format' => 'user_uploads#download'
   end
 

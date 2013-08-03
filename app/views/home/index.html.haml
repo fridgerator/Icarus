@@ -1,11 +1,2 @@
 %h3 Files
-%ul
-	- @user_files.each do |upload|
-		%li= link_to upload.file_file_name, upload.file.url
-
-= form_for UserUpload.new, url: user_uploads_path do |f|
-	= f.label :file
-	%br
-	= f.file_field :file
-	%br
-	= f.submit 'upload'
+= render partial: 'shared/file_list', locals: { files: @user_files }

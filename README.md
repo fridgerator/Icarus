@@ -11,8 +11,9 @@ Project is obviously still in its infancy.  Following is a basic outline of ever
 
 * Files
 	* folders / containers
-	* list
-	* actions (delete, share, etc)
+	* ~~list~~
+	* ~~actions (delete, etc)~~
+	* share
 	* size
 	* modified
 	* ~~upload - [paperclip](https://github.com/thoughtbot/paperclip)~~

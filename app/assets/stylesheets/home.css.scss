@@ -18,8 +18,31 @@ li.upload{
 
 .file-list-item{
 	padding: 10px 0;
+	position: relative;
+	form{
+		margin: 0;
+		padding: 0;
+	}
+	#name{
+		position: absolute;
+		top: 2px;
+		display: none;
+		width: 400px;
+	}
 	.controls{
-		float: right;
+		position: absolute;
+		right: 0;
+		top: 8px;
+		.delete-link{
+			img{
+				width: 15px;
+				margin-top: -4px;
+			}
+		}
+		a{
+			margin-right: 10px;
+			font-size: 0.8em;
+		}
 	}
 	&:nth-child(even) {
 		background: #eee;

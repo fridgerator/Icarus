@@ -1,0 +1,3 @@
+class UserFile < UserUpload
+
+end

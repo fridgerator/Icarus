@@ -1,0 +1,3 @@
+class Photo < UserUpload
+
+end

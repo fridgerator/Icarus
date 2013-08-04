@@ -1,3 +1,9 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$('li.upload .upload-trigger').on 'click', ->
+	$('#user_upload_file').click()
+
+$('#user_upload_file').on 'change', ->
+	$(@).closest('form').submit()
+
+$('.file-list-item').on 'click', '.rename', ->
+	$(@).closest('.file-list-item').find('#name').show()
+	return false

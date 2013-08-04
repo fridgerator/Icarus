@@ -36,6 +36,10 @@ GEM
     atomic (1.1.10)
     bcrypt-ruby (3.1.1)
     builder (3.1.4)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.1)
+      climate_control (>= 0.0.3, < 1.0)
     coderay (1.0.9)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -53,6 +57,11 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (4.2.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.2.1)
+      factory_girl (~> 4.2.0)
+      railties (>= 3.0.0)
     haml (4.0.3)
       tilt
     haml-rails (0.4)
@@ -79,6 +88,12 @@ GEM
     multi_json (1.7.7)
     mysql2 (0.3.13)
     orm_adapter (0.4.0)
+    paperclip (3.4.2)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.0)
+      mime-types
     polyglot (0.3.3)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
@@ -161,11 +176,13 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
+  factory_girl_rails
   haml-rails
   jasminerice!
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
+  paperclip
   pry
   rails (= 4.0.0)
   rspec-rails

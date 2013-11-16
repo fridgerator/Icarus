@@ -28,14 +28,7 @@ class UserUploadsController < ApplicationController
 	# update
 	def update
 		@user_upload = UserUpload.find params[:id]
-		path = @user_upload.file.path.gsub(@user_upload.type.underscore.pluralize, 'user_uploads')
-		begin
-			FileUtils.move(path, File.join(File.dirname(path), params[:name].to_s))
-		rescue ArgumentError => e # same file error, didn't change file name in form
-			logger.debug "#{e}"
-		end
-		@user_upload.file_file_name = params[:name].to_s
-		@user_upload.save
+		@user_upload.rename params[:name]
 	end
 
 	private

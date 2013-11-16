@@ -1,4 +1,4 @@
-### icarus
+### [icarus](http://en.wikipedia.org/wiki/Icarus)
 ![kid icarus](http://upload.wikimedia.org/wikipedia/en/thumb/8/88/Kid_Icarus_Sky_World.png/220px-Kid_Icarus_Sky_World.png)
 
 My hopes are to build a file storage and stream server similar to [ownCloud](http://owncloud.org/) written in ruby 2.0 / rails 4.
@@ -7,7 +7,12 @@ Project is obviously still in its infancy.  Following is a basic outline of ever
 
 * Main
 	* ~~log in / log out - [devise](https://github.com/plataformatec/devise)~~
-	* ~~first user able to creat self (devise :registerable), following users must be created by admin~~
+	* ~~first user able to creat self (devise :registerable)~~
+
+* Admin
+	* user crud
+	* user file storage limits
+	* user admin
 
 * Files
 	* folders / containers

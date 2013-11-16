@@ -15,9 +15,29 @@ class UserUpload < ActiveRecord::Base
 	validates_attachment_presence :file
 	# TODO: add custom validation for file size once we get account settings for users / groups
 
-	# for now, if user owns the upload they can download it
+	#
+	# whether or not a user can download the file (for now just if same user)
+	#
 	def downloadable?(user)
 		user.id == user_id
+	end
+
+	#
+	# 	renames user upload (file and database record)
+	#
+	def rename(new_name)
+		# rename path in case of sub classes
+		path = self.file.path.gsub(self.type.underscore.pluralize, 'user_uploads')
+
+		# rename file
+		begin
+			FileUtils.move(path, File.join(File.dirname(path), new_name.to_s))
+		rescue ArgumentError => e # same file error, didn't change file name in form
+			logger.debug "#{e}"
+		end
+
+		# rename database record
+		self.update_attributes(file_file_name: new_name)
 	end
 
 	private

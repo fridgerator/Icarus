@@ -5,5 +5,5 @@ $('#user_upload_file').on 'change', ->
 	$(@).closest('form').submit()
 
 $('.file-list-item').on 'click', '.rename', ->
-	$(@).closest('.file-list-item').find('#name').show()
+	$(@).closest('.file-list-item').find('input[name="name"]').show()
 	return false
